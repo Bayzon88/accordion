@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+#products {
+  margin: auto;
+  width: 500px;
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+
+.flavors {
+  padding: 20px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: space-around;
+
+  img {
+    width: 100px;
+  }
+  .flavor {
+    margin: auto;
+  }
+}
+
+button {
+  position: relative;
+  left: 20px;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+.noShow {
+  position: absolute;
+  opacity: 0;
+}
+
+.flavorShow {
+  margin-top: 10px;
+  position: relative;
+  opacity: 1;
+  transition: opacity 1.5s;
+  margin: 10px auto 0 auto;
+}
+
+.containerBig {
+  overflow: hidden;
+  max-height: 400px;
+  transition: 0.7s ease-in;
+}
+.containerSmall {
+  max-height: 150px;
+  overflow: hidden;
+  max-height: 150px;
+  transition: 0.7s ease-out;
+}
